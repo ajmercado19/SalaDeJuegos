@@ -1,4 +1,16 @@
-<!DOCTYPE html>
+
+<?php
+session_start();
+if(isset($_SESSION['usuarioActual']))
+{
+echo  $_SESSION['usuarioActual'];
+}
+else
+{
+	header("location:index.php");
+}
+
+?><!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -58,7 +70,10 @@
 		</div>
 
 		<div class="CajaAbajo animated bounceInUp">
-			<a style=" margin-top: -10%;" class="MiBotonUTNLinea" onclick="location.href='menu.html'" >Men&uacute; de juegos</a>	
+			<a style=" margin-top: -10%;" class="MiBotonUTNLinea" onclick="location.href='logout.php'" >Cerrar sesión</a>	
+
+			<a style=" margin-top: -20%;" class="MiBotonUTNLinea" onclick="location.href='menu.php'" >Men&uacute; de juegos</a>	
+			
 		</div>
 	</body>
 </html>

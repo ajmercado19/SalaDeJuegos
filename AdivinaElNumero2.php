@@ -69,7 +69,10 @@ else
 		</div>
 
 		<div class="CajaAbajo animated bounceInUp">
-			<a  class="MiBotonUTNLinea" onclick="location.href='menu.php'" >Men&uacute; de juegos</a>	
+				<a style=" margin-top: -10%;" class="MiBotonUTNLinea" onclick="location.href='logout.php'" >Cerrar sesión</a>	
+
+			<a style=" margin-top: -20%;" class="MiBotonUTNLinea" onclick="location.href='menu.php'" >Men&uacute; de juegos</a>	
+			
 		</div>
 	</body>
 </html>
