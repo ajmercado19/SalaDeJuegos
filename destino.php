@@ -12,7 +12,7 @@ echo  "con get :".$_GET['usuario'];
 echo "<br>";
 echo  "con post :".$_POST['usuario'];
 
-header("location:menu.html");
+header("location:menu.php");
 
 
 ?>
