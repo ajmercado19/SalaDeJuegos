@@ -21,7 +21,18 @@
 			
 		<form action="destino.php" method="post">
 
-					<input type="text"  name="usuario" value="<?php echo $_COOKIE['ultimoUsuario']; ?> ">
+					<input type="text"  name="usuario" value="<?php
+					if(isset($_COOKIE['ultimoUsuario']))
+					{
+							 echo $_COOKIE['ultimoUsuario']; 
+					}
+
+				
+
+
+
+
+					 ?> "    >
 
 					<input type="submit"  class="MiBotonUTNMenuInicio" value= "ingresar" > 
 

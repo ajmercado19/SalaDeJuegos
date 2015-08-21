@@ -2,6 +2,7 @@
 session_start();
 
 $_SESSION['usuarioActual']=$_POST['usuario'];
+
 setcookie('ultimoUsuario',$_POST['usuario']);
 
 var_dump($_SESSION);
