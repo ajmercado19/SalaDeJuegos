@@ -17,12 +17,12 @@ else
 		<title>Sala de Juegos</title>
 
 		<!--Estilos-->
-		<link rel="stylesheet" type="text/css" href="estilo.css">
-		<link rel="stylesheet" type="text/css" href="animacion.css">
+		<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="../css/animacion.css">
 		<!--final de Estilos-->
 
 		<!--Lógica-Programación-->
-		<script type="text/javascript" src="jsPiedarPapelTijera2.js"></script>
+		<script type="text/javascript" src="../js/jsPiedarPapelTijera2.js"></script>
         <!--Final de Lógica-Programación -->
 		
 
@@ -36,7 +36,7 @@ else
 			<input type="text" readonly id="empatadas">
 			<form id="FormIngreso">
 				<center>
-					<img src="imagenes/interrogacion.jpg" >
+					<img src="../imagenes/interrogacion.jpg" >
 				</center>
 				
 			</form>
@@ -47,9 +47,9 @@ else
 
 			
 			
-			<img class="PiedraPapelTijera animated zoomInRight " src="imagenes/piedra.jpg" onclick="piedra()">
-			<img class="PiedraPapelTijera animated zoomInUp" src="imagenes/papel.jpg" onclick="papel()">
-			<img class="PiedraPapelTijera animated zoomInLeft"  src="imagenes/tijera.jpg" onclick="tijera()">
+			<img class="PiedraPapelTijera animated zoomInRight " src="../imagenes/piedra.jpg" onclick="piedra()">
+			<img class="PiedraPapelTijera animated zoomInUp" src="../imagenes/papel.jpg" onclick="papel()">
+			<img class="PiedraPapelTijera animated zoomInLeft"  src="../imagenes/tijera.jpg" onclick="tijera()">
 			
 
 			
@@ -70,9 +70,9 @@ else
 		</div>
 
 		<div class="CajaAbajo animated bounceInUp">
-			<a style=" margin-top: -10%;" class="MiBotonUTNLinea" onclick="location.href='logout.php'" >Cerrar sesión</a>	
+			<a style=" margin-top: -10%;" class="MiBotonUTNLinea" onclick="location.href='../logout.php'" >Cerrar sesión</a>	
 
-			<a style=" margin-top: -20%;" class="MiBotonUTNLinea" onclick="location.href='menu.php'" >Men&uacute; de juegos</a>	
+			<a style=" margin-top: -20%;" class="MiBotonUTNLinea" onclick="location.href='../menu.php'" >Men&uacute; de juegos</a>	
 			
 		</div>
 	</body>

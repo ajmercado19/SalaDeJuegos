@@ -18,8 +18,8 @@ else
 		<title>Sala De Juegos</title>
 
 		<!--Estilos-->
-		<link rel="stylesheet" type="text/css" href="estilo.css">
-		<link rel="stylesheet" type="text/css" href="animacion.css">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="css/animacion.css">
 		<!--final de Estilos-->
 
 		<!--Lógica-Programación-->
@@ -33,12 +33,12 @@ else
 			<h1>Menú de Juegos</h1>
 			<form id="FormIngreso">
 
-					<img src="tps.png" style="width: 500px;float: right;">
+					<img src="imagenes/tps.png" style="width: 500px;float: right;">
 
 
-				<a  class="MiBotonUTNMenuInicio" onclick="location.href='AdivinaElNumero2.php'" >Adivina el número secreto</a>
-				<a  class="MiBotonUTNMenuInicio" onclick="location.href='PiedraPapelTijera2.php'" >Piedra, papel o tijera </a>
-				<a  class="MiBotonUTNMenuInicio" onclick="location.href='ReflejosDaltonicos1.php'" >Reflejos daltonicos</a>
+				<a  class="MiBotonUTNMenuInicio" onclick="location.href='juegos/AdivinaElNumero2.php'" >Adivina el número secreto</a>
+				<a  class="MiBotonUTNMenuInicio" onclick="location.href='juegos/PiedraPapelTijera2.php'" >Piedra, papel o tijera </a>
+				<a  class="MiBotonUTNMenuInicio" onclick="location.href='juegos/ReflejosDaltonicos1.php'" >Reflejos daltonicos</a>
 				
 
 

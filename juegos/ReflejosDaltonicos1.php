@@ -16,12 +16,12 @@ else
 		<title>Sala de Juegos</title>
 
 		<!--Estilos-->
-		<link rel="stylesheet" type="text/css" href="estilo.css">
-		<link rel="stylesheet" type="text/css" href="animacion.css">
+		<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="../css/animacion.css">
 		<!--final de Estilos-->
 
 		<!--Lógica-Programación-->
-		<script type="text/javascript" src="jsReflejosDaltonicos1.js"></script>
+		<script type="text/javascript" src="../js/jsReflejosDaltonicos1.js"></script>
         <!--Final de Lógica-Programación -->
 		
 
@@ -72,7 +72,7 @@ else
 		<div class="CajaAbajo animated bounceInUp">
 			<a style=" margin-top: -10%;" class="MiBotonUTNLinea" onclick="location.href='logout.php'" >Cerrar sesión</a>	
 
-			<a style=" margin-top: -20%;" class="MiBotonUTNLinea" onclick="location.href='menu.php'" >Men&uacute; de juegos</a>	
+			<a style=" margin-top: -20%;" class="MiBotonUTNLinea" onclick="location.href='../menu.php'" >Men&uacute; de juegos</a>	
 				</div>
 	</body>
 </html>
