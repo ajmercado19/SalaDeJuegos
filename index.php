@@ -11,6 +11,28 @@
 
 		<!--Lógica-Programación-->
 
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript">
+        function login()
+        {
+
+        	//alert("eureka!");
+        	alert($("#claveUsuario").val());
+
+
+        	var funcionAjax =$.ajax({url:"ValidarUsuario.php", data:{usuario:"Unsuario",clave:"unaclave"}});
+        	funcionAjax.done(function(respuesta){
+
+        		alert(respuesta);
+
+        	});
+
+
+
+        }
+
+        </script>
         <!--Final de Lógica-Programación -->
 
 
@@ -21,21 +43,15 @@
 			
 		<form action="destino.php" method="post">
 
-					<input type="text"  name="usuario" value="<?php
+					<input type="text" id="nombreUsuario" name="usuario" value="<?php
 					if(isset($_COOKIE['ultimoUsuario']))
 					{
 							 echo $_COOKIE['ultimoUsuario']; 
-					}
+					}?> ">
+					<input type="password" id="claveUsuario"> 
 
-				
-
-
-
-
-					 ?> "    >
-
-					<input type="submit"  class="MiBotonUTNMenuInicio" value= "ingresar" > 
-
+					<!--input type="submit"  class="MiBotonUTNMenuInicio" value= "ingresar" --> 
+					<input type="button" onclick="login()" class="MiBotonUTNMenuInicio" value= "Login" >
 
 
 		</form>

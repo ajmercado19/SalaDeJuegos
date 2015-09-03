@@ -85,7 +85,7 @@ left:0px;
 
 }
 
-input[type="text"]{
+input[type="text"] , input[type="password"]{
   width:92%;
   background:#fff;
   margin-bottom:4%;
@@ -94,7 +94,9 @@ input[type="text"]{
   font-family:'Open Sans',sans-serif;
   font-size:95%;
   color:#555;
+  border-radius: 12px;
 }
+
 select{
   width:100%;
   background:#fff;
