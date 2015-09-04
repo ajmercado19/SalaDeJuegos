@@ -22,6 +22,7 @@
 
         	var elUsuario=$("#nombreUsuario").val();
         	var laClave=$("#claveUsuario").val();
+
         	var funcionAjax =$.ajax({url:"ValidarUsuario.php", type:"post",
         		data:{
         			usuario:elUsuario,
@@ -31,7 +32,21 @@
 
         	funcionAjax.done(function(respuesta){
 
-        		alert(respuesta);
+        		if(respuesta=="correcto")
+        		{
+					$("#MensajeError").val("");
+					window.location.href="menu.php";
+        			// vamos al menu
+        		}
+        		else
+        		{
+        			$("#MensajeError").val("NO esta registrado... ");
+
+        			// mostrar mensaje "no esta en la base"
+        		}
+				
+				
+
 
         	});
 
@@ -59,6 +74,8 @@
 
 					<!--input type="submit"  class="MiBotonUTNMenuInicio" value= "ingresar" --> 
 					<input type="button" onclick="login()" class="MiBotonUTNMenuInicio" value= "Login" >
+
+					<input type="text" id ="MensajeError" readonly>
 
 
 		</form>
