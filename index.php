@@ -18,10 +18,17 @@
         {
 
         	//alert("eureka!");
-        	alert($("#claveUsuario").val());
+        	//alert($("#claveUsuario").val());
+
+        	var elUsuario=$("#nombreUsuario").val();
+        	var laClave=$("#claveUsuario").val();
+        	var funcionAjax =$.ajax({url:"ValidarUsuario.php", type:"post",
+        		data:{
+        			usuario:elUsuario,
+        			clave:laClave
+        			}});
 
 
-        	var funcionAjax =$.ajax({url:"ValidarUsuario.php", data:{usuario:"Unsuario",clave:"unaclave"}});
         	funcionAjax.done(function(respuesta){
 
         		alert(respuesta);
