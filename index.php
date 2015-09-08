@@ -43,6 +43,8 @@
         			$("#MensajeError").val("NO esta registrado... ");
 
         			// mostrar mensaje "no esta en la base"
+        			//vamos al registro
+        			window.location.href="registroJquery.php";
         		}
 				
 				
