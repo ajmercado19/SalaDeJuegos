@@ -11,11 +11,11 @@
 
 		<!--Lógica-Programación-->
 
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.js"></script>
-     <script src="js/jsRegistroJquery.js"></script>
+	    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	    <script src="js/jquery.form.js"></script>
+	    <script src="js/jquery.validate.js"></script>
+	    <script src="js/jsRegistroJquery.js"></script>
 	</head>
 	<body>
 	</body>
@@ -34,7 +34,10 @@
         		<p>Fecha de nacimiento<input name="fecha" type="date" value="" id="fecha"></p>
         		<p>Password<input name="pass" type="password" value="" id="pass"></p>
         		<p>Confirmar Password<input name="pass2" type="password" value="" id="pass2"></p>
-        		<p><input class="MiBotonUTNMenuInicio" type="submit" value="Registrarse"></p>
+        		<p>Foto<input name="fichero" type="file" id="fichero"></p>
+        		<span id="error" class='error1' style="display: none;"></span>
+                <p>Preview</p><img name="imagen" id="imagen" src="" alt="Imagen aqui" width="280" height="250">
+                <p><input class="MiBotonUTNMenuInicio" type="submit" value="Registrarse" name="btnRegistro"></p
     	    </fieldset>
     	    <div id="mensaje" style="display: none;">&nbsp;</div>
     		</form>
