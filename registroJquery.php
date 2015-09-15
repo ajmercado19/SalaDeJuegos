@@ -22,18 +22,18 @@
 		<div class="CajaInicio animated bounceInRight">
 			<h3>Registro en la sala</h3>
 			
-    		<form id="frmRegistro" class="contacto">
+    		<form id="frmRegistro" class="contacto" >
     
             <fieldset>
         		<legend>Registrate y juga!</legend>
-        		<p>Nombre<input name="nombre" type="text" maxlength="50" value="" id="nombre" ></p>
-        		<p>Apellido<input name="apellido" type="text" maxlength="50" value="" id="apellido"></p>
-        		<p>Legajo<input name="legajo" type="text" value="" id="legajo" ></p>
-        		<p>Direccion<input name="dire" type="text" maxlength="50" value="" id="dire" ></p>
-        		<p>E-mail (sera tu nombre de usuario)<input name="email" type="text" value="" id="email" maxlength="50"></p>
-        		<p>Fecha de nacimiento<input name="fecha" type="date" value="" id="fecha"></p>
-        		<p>Password<input name="pass" type="password" value="" id="pass"></p>
-        		<p>Confirmar Password<input name="pass2" type="password" value="" id="pass2"></p>
+        		<p>Nombre<input name="nombre" type="text" maxlength="50" value="maria" id="nombre" > </p>
+        		<p>Apellido<input name="apellido" type="text" maxlength="50" value="quispe" id="apellido"></p>
+        		<p>Legajo<input name="legajo" type="text" value="123123" id="legajo" ></p>
+        		<p>Direccion<input name="dire" type="text" maxlength="50" value="lalala 1320" id="dire" ></p>
+        		<p>E-mail (sera tu nombre de usuario)<input name="email" type="text" value="quispe@ymail.com" id="email" maxlength="50"></p>
+        		<p>Fecha de nacimiento<input name="fecha" type="date" value="07 29 1999" id="fecha"></p>
+        		<p>Password<input name="pass" type="password" value="qweqwe" id="pass"></p>
+        		<p>Confirmar Password<input name="pass2" type="password" value="qweqwe" id="pass2"></p>
         		<p>Foto<input name="fichero" type="file" id="fichero"></p>
         		<span id="error" class='error1' style="display: none;"></span>
                 <p>Preview</p><img name="imagen" id="imagen" src="" alt="Imagen aqui" width="280" height="250">

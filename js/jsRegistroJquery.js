@@ -48,6 +48,7 @@ $(document).ready(function(){
             for (var i = 0; i < files.length; i++) {
             envio.append("fichero0", files[i]);
             }
+            alert("antes de ajax");
     		var miAjax = $.ajax({
     			type: "POST",
     			url:"signUp.php",
@@ -56,6 +57,7 @@ $(document).ready(function(){
     			data: envio,
     		});
     		miAjax.done(function(msg){
+                alert(msg);
     		        var strIndex = msg.indexOf('Error');
                     if(strIndex == -1) {
                         //string no encontrado
