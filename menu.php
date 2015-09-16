@@ -18,6 +18,7 @@ else
 		<title>Sala De Juegos</title>
 
 		<!--Estilos-->
+		 <link rel="icon" href="http://www.octavio.com.ar/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
 		<link rel="stylesheet" type="text/css" href="css/animacion.css">
 		<!--final de Estilos-->
@@ -34,7 +35,7 @@ else
 			<form id="FormIngreso">
 
 				
-<img src="imagenes/tps.png" style="width: 500px;">
+				<img src="imagenes/tps.png" style="width: 500px;">
 
 				<a  class="MiBotonUTNMenuInicio" onclick="location.href='juegos/AdivinaElNumero2.php'" >Adivina el número secreto</a>
 				<a  class="MiBotonUTNMenuInicio" onclick="location.href='juegos/PiedraPapelTijera2.php'" >Piedra, papel o tijera </a>

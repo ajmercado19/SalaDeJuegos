@@ -7,6 +7,7 @@
 		<!--Estilos-->
 		<link rel="stylesheet" type="text/css" href="css/animacion.css">
 		<link rel="stylesheet" type="text/css" href="css/estilosValidacion.css">
+		 <link rel="icon" href="http://www.octavio.com.ar/favicon.ico">
 		<!--final de Estilos-->
 
 		<!--Lógica-Programación-->
