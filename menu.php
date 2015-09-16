@@ -30,7 +30,8 @@ else
 
 	</head>
 	<body>
-		<div class="CajaInicio animated bounceInRight">
+		<div id="header">cabecera</div>
+		<div class="CajaInicio animated bounceInRight"style="  margin-top: 55px;">
 			<h1>Menú de Juegos</h1>
 			<form id="FormIngreso">
 

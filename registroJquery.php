@@ -20,6 +20,7 @@
 	</head>
 	<body>
 	</body>
+	<div id="header">cabecera</div>
 		<div class="CajaInicio animated bounceInRight">
 			<h3>Registro en la sala</h3>
 			

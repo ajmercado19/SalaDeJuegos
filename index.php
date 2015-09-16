@@ -58,9 +58,17 @@
         </script>
         <!--Final de Lógica-Programación -->
 
+<style type="text/css">
 
+
+
+
+
+</style>
 	</head>
 	<body>
+
+		<div id="header">cabecera</div>
 		<div class="CajaInicio animated bounceInRight">
 			<h3>Ingreso a la sala</h3>
 			
