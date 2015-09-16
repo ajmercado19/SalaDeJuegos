@@ -5,8 +5,11 @@
 		<title>Sala De Juegos</title>
 
 		<!--Estilos-->
+		 <link rel="icon" href="http://www.octavio.com.ar/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
 		<link rel="stylesheet" type="text/css" href="css/animacion.css">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/ingreso.css" rel="stylesheet">
 		<!--final de Estilos-->
 
 		<!--Lógica-Programación-->
@@ -14,11 +17,12 @@
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript">
+        function registrar()
+        {
+        	window.location.href="registroJquery.php";
+        }
         function login()
         {
-
-        	//alert("eureka!");
-        	//alert($("#claveUsuario").val());
 
         	var elUsuario=$("#nombreUsuario").val();
         	var laClave=$("#claveUsuario").val();
@@ -35,8 +39,7 @@
         		if(respuesta=="correcto")
         		{
 					$("#MensajeError").val("");
-					window.location.href="menu.php";
-        			// vamos al menu
+					window.location.href="menu.php"; 			// vamos al menu
         		}
         		else
         		{
@@ -44,13 +47,9 @@
 
         			// mostrar mensaje "no esta en la base"
         			//vamos al registro
-        			window.location.href="registroJquery.php";
+        			//window.location.href="registroJquery.php";
         		}
-				
-				
-
-
-        	});
+		});
 
 
 
@@ -65,23 +64,38 @@
 		<div class="CajaInicio animated bounceInRight">
 			<h3>Ingreso a la sala</h3>
 			
-		<form action="destino.php" method="post">
+	 <div id="formLogin" class="container">
 
-					<input type="text" id="nombreUsuario" name="usuario" value="<?php
-					if(isset($_COOKIE['ultimoUsuario']))
-					{
-							 echo $_COOKIE['ultimoUsuario']; 
-					}?> ">
-					<input type="password" id="claveUsuario"> 
+      <form  class="form-ingreso " onsubmit="login();return false;">
+        <h2 class="form-ingreso-heading">Ingrese sus datos</h2>
+        <label for="correo" class="sr-only">Correo electrónico</label>
+                <input type="email" id="correo" class="form-control" placeholder="Correo electrónico" required="" autofocus="" value="<?php  if(isset($_COOKIE["registro"])){echo $_COOKIE["registro"];}?>">
+        <label for="clave" class="sr-only">Clave</label>
+        <input type="password" id="clave" minlength="4" class="form-control" placeholder="clave" required="">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" id="recordarme" checked> Recordame
+          </label>
+          
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
+      <p>octavio@admin.com.ar</p>
+      <p>1234</p>
+      </form>
+      <hr>
+		<form  class="form-ingreso " >
+        <h5 class="form-ingreso-heading">Información</h5>
+        <input type="text"  class="form-control" readonly id="MensajeError" >
+        <h3 class="form-ingreso-heading">Registrar</h3>
 
-					<!--input type="submit"  class="MiBotonUTNMenuInicio" value= "ingresar" --> 
-					<input type="button" onclick="login()" class="MiBotonUTNMenuInicio" value= "Login" >
+                <button class="btn btn-lg btn-warning btn-block" onclick="registrar()" type="button">Registrar</button>
+   				
 
-					<input type="text" id ="MensajeError" readonly>
+      </form>
 
 
-		</form>
-			
+    </div> <!-- /container -->
+
 
 
 			
