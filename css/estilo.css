@@ -96,7 +96,7 @@ left:0px;
 
 }
 
-input[type="text"] , input[type="password"], input[type="email"]{
+input[type="text"] , input[type="password"], input[type="email"], input[type="date"], input[type="file"]{
   width:92%;
   background:#fff;
   margin-bottom:4%;

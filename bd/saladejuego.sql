@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-09-2015 a las 17:02:06
+-- Tiempo de generación: 16-09-2015 a las 16:25:35
 -- Versión del servidor: 5.6.21
 -- Versión de PHP: 5.6.3
 
@@ -57,15 +57,18 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   `direccion` varchar(50) COLLATE utf8mb4_spanish2_ci NOT NULL,
   `fecha` varchar(50) COLLATE utf8mb4_spanish2_ci NOT NULL,
   `mail` varchar(50) COLLATE utf8mb4_spanish2_ci NOT NULL,
-  `foto` varchar(50) COLLATE utf8mb4_spanish2_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
+  `foto` varchar(50) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `clave` varchar(50) COLLATE utf8mb4_spanish2_ci NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
 
 --
 -- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`id`, `nombre`, `apellido`, `legajo`, `direccion`, `fecha`, `mail`, `foto`) VALUES
-(3, 'maria', 'quispe', '123123', 'lalala 1320', '2015-01-01', 'quispe@ymail.com', 'quispe@ymail.com.jpg');
+INSERT INTO `usuario` (`id`, `nombre`, `apellido`, `legajo`, `direccion`, `fecha`, `mail`, `foto`, `clave`) VALUES
+(3, 'maria', 'quispe', '123123', 'lalala 1320', '2015-01-01', 'quispe@ymail.com', 'quispe@ymail.com.jpg', ''),
+(4, 'maria', 'quispe', '123123', 'lalala 1320', '2014-01-30', 'quispe@ymail.com', 'quispe@ymail.com.gif', 'qweqwe'),
+(5, 'maria', 'quispe', '123123', 'lalala 1320', '2015-01-01', 'quispe@ymail.com', 'quispe@ymail.com.gif', 'qweqwe');
 
 --
 -- Índices para tablas volcadas
@@ -85,7 +88,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

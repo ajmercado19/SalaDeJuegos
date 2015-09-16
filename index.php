@@ -9,7 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
 		<link rel="stylesheet" type="text/css" href="css/animacion.css">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/ingreso.css" rel="stylesheet">
+        <link href="css/ingreso.css" rel="stylesheet">
 		<!--final de Estilos-->
 
 		<!--Lógica-Programación-->
@@ -19,7 +19,7 @@
         <script type="text/javascript">
         function registrar()
         {
-        	window.location.href="registroJquery.php";
+        	window.location.href="formUsuarioJquery.php";
         }
         function login()
         {
@@ -66,11 +66,16 @@
 
 </style>
 	</head>
-	<body>
+	<body style="zoom: 0.8;">
 
-		<div id="header">cabecera</div>
+		<div id="header">
+
+
+Ingreso a la sala
+
+        </div>
 		<div class="CajaInicio animated bounceInRight">
-			<h3>Ingreso a la sala</h3>
+			<br><br>
 			
 	 <div id="formLogin" class="container">
 
@@ -90,7 +95,7 @@
       <p>octavio@admin.com.ar</p>
       <p>1234</p>
       </form>
-      <hr>
+      <br>
 		<form  class="form-ingreso " >
         <h5 class="form-ingreso-heading">Información</h5>
         <input type="text"  class="form-control" readonly id="MensajeError" >

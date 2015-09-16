@@ -42,6 +42,7 @@ if(isset($_POST['usuario']) && isset($_POST['clave']) && $_POST['nombre'] && iss
         $usuario->legajo=$_POST['legajo'];
         $usuario->direccion=$_POST['dire'];
         $usuario->fecha=$_POST['fecha'];
+         $usuario->clave=$_POST['clave'];
         $usuario->foto=$nuevoNombreDeFoto;
         $usuario->InsertarUsuario();
 

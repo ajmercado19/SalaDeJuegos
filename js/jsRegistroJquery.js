@@ -44,20 +44,21 @@ $(document).ready(function(){
             envio.append("legajo", $("#legajo").val());
             envio.append("dire", $("#dire").val());
             envio.append("fecha", $("#fecha").val());
+            envio.append("clave", $("#pass").val());
    
             for (var i = 0; i < files.length; i++) {
             envio.append("fichero0", files[i]);
             }
-            alert("antes de ajax");
+           // alert("antes de ajax");
     		var miAjax = $.ajax({
     			type: "POST",
-    			url:"signUp.php",
+    			url:"GuardarUsuario.php",
     			contentType: false,
     		    processData: false,
     			data: envio,
     		});
     		miAjax.done(function(msg){
-                alert(msg);
+               //alert(msg);
     		        var strIndex = msg.indexOf('Error');
                     if(strIndex == -1) {
                         //string no encontrado
@@ -76,7 +77,7 @@ $(document).ready(function(){
         				    $('#mensaje').fadeOut('fast');
         				    window.location.href="menu.php";
         				    
-        				}, 2000);
+        				}, 2500);
                     }
                    else
                     {
