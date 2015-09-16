@@ -33,14 +33,14 @@ else
 			<h1>Menú de Juegos</h1>
 			<form id="FormIngreso">
 
-					<img src="imagenes/tps.png" style="width: 500px;float: right;">
-
+				
+<img src="imagenes/tps.png" style="width: 500px;">
 
 				<a  class="MiBotonUTNMenuInicio" onclick="location.href='juegos/AdivinaElNumero2.php'" >Adivina el número secreto</a>
 				<a  class="MiBotonUTNMenuInicio" onclick="location.href='juegos/PiedraPapelTijera2.php'" >Piedra, papel o tijera </a>
 				<a  class="MiBotonUTNMenuInicio" onclick="location.href='juegos/ReflejosDaltonicos1.php'" >Reflejos daltonicos</a>
 				
-
+	
 
 			</form>
 

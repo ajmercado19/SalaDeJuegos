@@ -30,7 +30,7 @@ caption {
 }
 
 .CajaInicio {
-  width:750px;
+  width:600px;
   margin:0 auto;
   margin-top:8px;
   margin-bottom:2%;
@@ -211,7 +211,7 @@ position: absolute;
   display:block;
  
   border:hidden;
-  width:150px;
+  //width:150px;
   background:Blue;
   margin-top:1%;
   padding:6px;

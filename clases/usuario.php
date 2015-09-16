@@ -20,7 +20,7 @@ class usuario
             return $consulta->fetchAll(PDO::FETCH_CLASS, "usuario"); 
 
    }
-    public function InsertarUsuario()
+  public function InsertarUsuario()
      {
                 $objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
                 $consulta =$objetoAccesoDato->RetornarConsulta("INSERT into usuario (nombre,apellido,legajo,direccion,fecha,mail,foto)values(:paramNombre,:paramApellido,:paramLegajo,:paramDireccion,:paramFecha,:paramMail,:paramFoto)");

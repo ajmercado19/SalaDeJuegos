@@ -69,6 +69,8 @@ function verificar()
 
 			}
 
+			
+
 		}
 	else if(numeroIngresado<numeroSecreto)
 		{
