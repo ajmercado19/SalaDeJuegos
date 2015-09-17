@@ -44,7 +44,7 @@ if(isset($_FILES['fichero0']))
     			$nomarch=$NOMEXT[0].".".$EXT;  // no olvidar el "." separador de nombre/ext
     			move_uploaded_file($_FILES['fichero0']['tmp_name'], $ruta.$nomarch);
 
-    			echo  $ruta.$email.".".$EXT;
+    			echo $ruta.$nomarch;
     			}
 			}
 		}
