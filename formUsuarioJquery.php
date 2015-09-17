@@ -37,7 +37,7 @@
         		<p>Legajo<input class="form-control" name="legajo" type="text" value="123123" id="legajo" ></p>
         		<p>Direccion<input class="form-control" name="dire" type="text" maxlength="50" value="lalala 1320" id="dire" ></p>
         		<p>E-mail (sera tu nombre de usuario)<input class="form-control" name="email" type="text" value="quispe@ymail.com" id="email" maxlength="50"></p>
-        		<p>Fecha de nacimiento<input class="form-control" name="fecha" type="date" value="07 29 1999" id="fecha"></p>
+        		<p>Fecha de nacimiento<input class="form-control" name="fecha" type="date" value="1999-07-29" id="fecha"></p>
         		<p>Password<input class="form-control" name="pass" type="password" value="qweqwe" id="pass"></p>
         		<p>Confirmar Password<input class="form-control" name="pass2" type="password" value="qweqwe" id="pass2"></p>
         		<p>Foto<input class="form-control btn btn-info"  name="fichero" type="file" id="fichero"></p>
