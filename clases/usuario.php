@@ -41,9 +41,9 @@ class usuario
      public function validarusuario($usuario,$clave)
      {
             $objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
-            $consulta =$objetoAccesoDato->RetornarConsulta("select * from usuario where mail=$usuario and ");
-            $consulta->execute();         
-
+            $consulta =$objetoAccesoDato->RetornarConsulta("select * from usuario where mail='$usuario' and clave='$clave'");
+            $consulta->execute();
+            return $consulta->fetchAll(PDO::FETCH_CLASS, "usuario");
 
      }
    

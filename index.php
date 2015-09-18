@@ -24,8 +24,8 @@
         function login()
         {
 
-        	var elUsuario=$("#nombreUsuario").val();
-        	var laClave=$("#claveUsuario").val();
+        	var elUsuario=$("#correo").val();
+        	var laClave=$("#clave").val();
 
         	var funcionAjax =$.ajax({url:"ValidarUsuario.php", type:"post",
         		data:{
