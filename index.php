@@ -8,53 +8,21 @@
 		 <link rel="icon" href="http://www.octavio.com.ar/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
 		<link rel="stylesheet" type="text/css" href="css/animacion.css">
-		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
         <link href="css/ingreso.css" rel="stylesheet">
 		<!--final de Estilos-->
 
 		<!--Lógica-Programación-->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+          <script src="bower_components/jquery-form/jquery.form.js"></script>
+        <script SRC="js/jsControladorLogin.js" TYPE="text/javascript"></script>
 
-<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript">
         function registrar()
         {
         	window.location.href="formUsuarioJquery.php";
         }
-        function login()
-        {
-
-        	var elUsuario=$("#correo").val();
-        	var laClave=$("#clave").val();
-
-        	var funcionAjax =$.ajax({url:"ValidarUsuario.php", type:"post",
-        		data:{
-        			usuario:elUsuario,
-        			clave:laClave
-        			}});
-
-
-        	funcionAjax.done(function(respuesta){
-
-        		if(respuesta=="correcto")
-        		{
-					$("#MensajeError").val("");
-					window.location.href="menu.php"; 			// vamos al menu
-        		}
-        		else
-        		{
-        			$("#MensajeError").val("NO esta registrado... ");
-
-        			// mostrar mensaje "no esta en la base"
-        			//vamos al registro
-        			//window.location.href="registroJquery.php";
-        		}
-		});
-
-
-
-        }
-
+      
         </script>
         <!--Final de Lógica-Programación -->
 

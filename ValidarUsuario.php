@@ -2,15 +2,14 @@
 session_start();
 require_once("clases/usuario.php");
 require_once("clases/AccesoDatos.php");
-//echo $_POST['usuario'];
-//echo $_POST['clave'];
 
-if(usuario::validarusuario($_POST['usuario'],$_POST['clave']))
+$DatosLogin= json_decode(json_encode($_POST));
 
-//if ($_POST['usuario']=="octavio" && $_POST['clave']=="1234")
+$usuarioValidado=usuario::validarusuario($DatosLogin->usuario,$DatosLogin->clave);
+
+if(isset($usuarioValidado->correo))
 {
-
-	$_SESSION['usuarioActual']=$_POST['usuario'];
+	$_SESSION['usuarioActual']=$usuarioValidado->correo;
 	echo "correcto";
 
 }else
