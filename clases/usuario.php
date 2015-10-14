@@ -54,6 +54,18 @@ class usuario
             return $UsuarioBuscado;
 
      }
+      public function validarMailUsuario($correo)
+     {
+            $objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
+            $sql="select * from usuario where correo='$correo' ";
+            $consulta =$objetoAccesoDato->RetornarConsulta($sql);
+           // $consulta =$objetoAccesoDato->RetornarConsulta("CALL validarUsuario(:usuario,:clave)");
+            $consulta->bindValue(':correo',$correo, PDO::PARAM_STR);
+            $consulta->execute(); 
+            $UsuarioBuscado= $consulta->fetchObject('usuario');
+            return  $UsuarioBuscado;
+
+     }
    
 }
 ?>

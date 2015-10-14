@@ -42,12 +42,12 @@
 Ingreso a la sala
 
         </div>
-		<div class="CajaInicio animated bounceInRight">
+		<div class="CajaInicio">
 			<br><br>
 			
 	 <div id="formLogin" class="container">
 
-      <form  class="form-ingreso " onsubmit="login();return false;">
+      <form  style=" float: left;" class="form-ingreso " onsubmit="login();return false;">
         <h2 class="form-ingreso-heading">Ingrese sus datos</h2>
         <label for="correo" class="sr-only">Correo electrónico</label>
                 <input type="email" id="correo" class="form-control" placeholder="Correo electrónico" required="" autofocus="" value="<?php  if(isset($_COOKIE["registro"])){echo $_COOKIE["registro"];}?>">
@@ -62,15 +62,26 @@ Ingreso a la sala
         <button class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
       <p>octavio@admin.com.ar</p>
       <p>1234</p>
-      </form>
-      <br>
-		<form  class="form-ingreso " >
-        <h5 class="form-ingreso-heading">Información</h5>
+            <h5 class="form-ingreso-heading">mensaje:</h5>
         <input type="text"  class="form-control" readonly id="MensajeError" >
+
+      </form>
+      
+		<form  class="form-ingreso "  style=" float: right;  margin-right: 30px;" onsubmit="GuardarUsuarioRapido();return false" >
+
+       <h2 class="form-ingreso-heading">Registro rapido</h2>
+        <label for="cantante" class="sr-only">Nombre</label>
+        <input type="text"  minlength="2"  id="nombre" name="nombre" title="Se necesita un nombre " class="form-control" placeholder="Nombre" required="" autofocus="">
+        <label for="titulo" class="sr-only">apellido</label>
+        <input type="text"  minlength="2"  id="apellido"  name="apellido" title="Se necesita un apellido "  class="form-control" placeholder="Apellido" required="" autofocus="">
+        <label for="titulo" class="sr-only">mail</label>
+        <input type="email"  id="correoRegistro"  class="form-control" name="correo"   title="Se necesita un correo electronico " placeholder="alguien@sucorreo.com.ar" maxlength="50" autofocus=""  required="" >
+        <label for="titulo" class="sr-only">clave</label>
+        <input type="password" id="claveRegistro" class="form-control" name="clave"  placeholder="Su clave, minimo 6 letras" title="minimo 6 caracteres"  minlength="6"   required="" >   
         <h3 class="form-ingreso-heading">Registrar</h3>
 
-                <button class="btn btn-lg btn-warning btn-block" onclick="registrar()" type="button">Registrar</button>
-   				
+            	<button class="btn btn-lg btn-warning " type="submit">Registrar</button>
+      	
 
       </form>
 
