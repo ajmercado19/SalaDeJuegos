@@ -6,6 +6,7 @@
  *     jQuery Form is designed with flexibility in mind, however, it still
  *     caters to those who need a plugin to work out of the box.
  * @p
+ 
  *     By default, it will append error messages wrapped in x/html label tags
  *     after the form element with a class of error when the form is submitted.
  *     However, it can be customized through options so that it will wrap 
